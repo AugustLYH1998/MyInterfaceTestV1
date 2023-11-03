@@ -1,0 +1,12 @@
+[
+    {
+        "req_body": {"username": "admin", "password": "123456"
+        },
+        "code": 200
+    },
+    {
+        "req_body": {"username": "admin", "password": "1234567"
+        },
+        "code": 403
+    }
+]

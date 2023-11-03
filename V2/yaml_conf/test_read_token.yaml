@@ -1,0 +1,14 @@
+# 读取用例
+-
+  model: 模块1
+  interface: 接口2
+  title: 打印access_token
+  request: 
+    method: get
+    url: http://localhost:3333/api/any
+    params: 
+      access_token: access_token
+    files: null
+    need_read: True
+    need_write: False
+  validate: null

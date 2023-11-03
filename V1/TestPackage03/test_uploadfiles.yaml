@@ -1,0 +1,11 @@
+-
+  model: 模块1
+  interface: 接口1
+  title: 文件上传
+  request: 
+    method: post
+    url: http://localhost:3333/api/upload
+    params: null
+    files:
+      media: 'E:\test\MyInterfaceTestV1\V1\TestRequests01\1.txt'
+  validate: null

@@ -1,0 +1,49 @@
+# yaml 模拟一个用例
+# 自定义名称
+# -
+#   model: 模块
+#   interface: 接口
+#   title: 用例标题
+#   request: 
+#     method: 请求方式
+#     url: 请求路径
+#     params: 参数
+#     # data: 
+#     # json: 
+#     # header
+#   # validate: null 断言
+#   validate: null 断言
+-
+  model: 模块1
+  interface: 接口1
+  title: 获取access_token
+  request: 
+    method: get
+    url: http://localhost:3333/api/access_token
+    params: 
+            grant_type: 1
+            secret: 1
+            appid: 1
+    # data: 
+    # json: 
+    # header
+  # validate: null 断言
+  validate: null
+
+# 每个都是一个用例
+# -
+#   model: 模块2
+#   interface: 接口1
+#   title: 获取access_token
+#   request: 
+#     method: get
+#     url: http://localhost:3333/api/access_token
+#     params: 
+#             grant_type: 1
+#             secret: 1
+#             appid: 1
+#     # data: 
+#     # json: 
+#     # header
+#   # validate: null 断言
+#   validate: null

@@ -1,0 +1,20 @@
+# 用例
+-
+  model: 模块1
+  interface: 接口1
+  title: 获取access_token
+  request: 
+    method: get
+    url: http://localhost:3333/api/access_token
+    params: 
+            grant_type: 1
+            secret: 1
+            appid: 1
+    # data: 
+    # json: 
+    # header
+    files: null
+    need_read: False
+    need_write: True
+  # validate: null 断言
+  validate: null

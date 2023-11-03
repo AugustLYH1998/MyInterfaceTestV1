@@ -1,0 +1,13 @@
+-
+  model: 模块1
+  interface: 接口3
+  title: 文件上传
+  request: 
+    method: post
+    url: http://localhost:3333/api/upload
+    params: null
+    files:
+      media: test_api.py
+    need_read: False
+    need_write: False
+  validate: null
