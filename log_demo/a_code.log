@@ -1,0 +1,2 @@
+2023-11-03 17:35:27,189 DEBUG [logging_use.py(<module>:55)] - 我是一个调试级别的日志
+2023-11-03 17:42:44,275 DEBUG [logging_use.py(<module>:55)] - 我是一个调试级别的日志

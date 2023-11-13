@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "b48ffff2-6070-4707-b39f-a1ffd591dc60",
+		"name": "第三天作业",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ihrm登录",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"console.log(\"预期结果=\" + data.code)",
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(data.code);",
+							"",
+							"    console.log(\"实际结果=\" + jsonData.code);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mobile\":\"{{mobile}}\",\"password\":\"{{password}}\"}"
+				},
+				"url": {
+					"raw": "http://ihrm-test.itheima.net/api/sys/login",
+					"protocol": "http",
+					"host": [
+						"ihrm-test",
+						"itheima",
+						"net"
+					],
+					"path": [
+						"api",
+						"sys",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

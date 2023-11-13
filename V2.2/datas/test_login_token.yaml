@@ -1,0 +1,10 @@
+-
+  model: 登录
+  interface: 登录接口
+  title: test1
+  request: 
+    method: post
+    url: http://localhost:3333/api/login
+    params: 
+      username: admin
+      password: '123456'

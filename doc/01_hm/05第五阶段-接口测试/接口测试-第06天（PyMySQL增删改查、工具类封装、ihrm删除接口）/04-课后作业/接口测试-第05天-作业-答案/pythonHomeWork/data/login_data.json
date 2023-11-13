@@ -1,0 +1,30 @@
+[
+  {
+    "desc": "正确的⽤户名和密码",
+    "username": "admin",
+    "password": "123456",
+    "code": "8888",
+    "expect": "登录成功"
+  },
+  {
+    "desc": "不存在的⽤户名",
+    "username": "root",
+    "password": "123456",
+    "code": "8888",
+    "expect": "登录失败"
+  },
+  {
+    "desc": "错误的密码",
+    "username": "admin",
+    "password": "123123",
+    "code": "8888",
+    "expect": "登录失败"
+  },
+  {
+    "desc": "错误的验证码",
+    "username": "admin",
+    "password": "123456",
+    "code": "9999",
+    "expect": "登录失败"
+  }
+]

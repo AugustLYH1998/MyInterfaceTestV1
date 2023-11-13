@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "4e657e21-b21e-457a-87aa-637d3f410ef6",
+		"name": "postman关联练习1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "查询天气获取城市名",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 1. 获取响应结果",
+							"var jsonData = pm.response.json()",
+							"",
+							"// 2. 从响应结果中，提取 城市名",
+							"var city = jsonData.weatherinfo.city",
+							"",
+							"// 3. 将城市名保存到 全局变量",
+							"pm.environment.set(\"env_city\", city)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.weather.com.cn/data/sk/101010100.html",
+					"protocol": "http",
+					"host": [
+						"www",
+						"weather",
+						"com",
+						"cn"
+					],
+					"path": [
+						"data",
+						"sk",
+						"101010100.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "百度搜索用城市名",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.baidu.com/S?wd={{env_city}}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"baidu",
+						"com"
+					],
+					"path": [
+						"S"
+					],
+					"query": [
+						{
+							"key": "wd",
+							"value": "{{env_city}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

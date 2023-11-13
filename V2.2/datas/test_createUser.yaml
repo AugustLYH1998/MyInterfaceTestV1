@@ -1,0 +1,10 @@
+-
+  model: 数据库
+  interface: 添加用户
+  title: test1
+  request: 
+    method: get
+    url: http://localhost:3333/api/createUser
+    params: 
+      id: 123
+      phonenumber: 18161205501

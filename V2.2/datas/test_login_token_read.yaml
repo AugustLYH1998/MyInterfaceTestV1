@@ -1,0 +1,8 @@
+-
+  model: 登录
+  interface: any
+  title: test1
+  request: 
+    method: get
+    url: http://localhost:3333/api/any
+    params: 
